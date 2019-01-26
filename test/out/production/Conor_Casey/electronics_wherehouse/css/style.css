@@ -1,0 +1,13 @@
+
+
+    .pane{
+        -fx-background-image: url("../img/background.jpg");
+        -fx-background-repeat: stretch;
+        -fx-background-position: center center;
+    }
+
+    .menuPic{
+            -fx-background-image: url("../img/Menu.jpg");
+            -fx-background-repeat: stretch;
+            -fx-background-position: center center;
+    }

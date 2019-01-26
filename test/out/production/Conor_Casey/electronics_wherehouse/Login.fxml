@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="600.0" styleClass="pane" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="electronics_wherehouse.LoginController">
+   <children>
+      <BorderPane id="pane" layoutY="193.0" prefHeight="48.0" prefWidth="600.0" stylesheets="@css/style.css" />
+      <VBox layoutX="237.0" layoutY="81.0" prefHeight="110.0" prefWidth="361.0">
+         <children>
+            <VBox prefHeight="70.0" prefWidth="361.0">
+               <children>
+                  <TextField fx:id="userName">
+                     <VBox.margin>
+                        <Insets right="80.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="70.0" prefWidth="361.0">
+               <children>
+                  <TextField fx:id="userPassword">
+                     <VBox.margin>
+                        <Insets right="80.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutY="81.0" prefHeight="70.0" prefWidth="210.0">
+         <children>
+            <Text strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="94.693359375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="150.0" top="19.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutY="136.0" prefHeight="70.0" prefWidth="210.0">
+         <children>
+            <Text strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="94.693359375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="150.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <Label fx:id="output1" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="64.0" prefHeight="17.0" prefWidth="281.0" textFill="#ee0808" />
+      <Label fx:id="output2" alignment="CENTER" contentDisplay="CENTER" layoutX="245.0" layoutY="304.0" prefHeight="17.0" prefWidth="281.0" textFill="#ee0808" />
+      <ToolBar layoutY="442.0" prefHeight="48.0" prefWidth="600.0">
+         <items>
+            <Button mnemonicParsing="false" onAction="#handleAdminLoginButtonAction" prefWidth="100.0" text="Login">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </items>
+      </ToolBar>
+      <TextField fx:id="adminName" layoutX="245.0" layoutY="336.0" prefHeight="25.0" prefWidth="281.0" />
+      <TextField fx:id="adminPassword" layoutX="245.0" layoutY="381.0" prefHeight="25.0" prefWidth="281.0" />
+      <Text layoutX="152.0" layoutY="356.0" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="73.693359375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="401.0" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="94.693359375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="37.0" prefHeight="54.0" prefWidth="154.0" text="User Login">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="258.0" prefHeight="54.0" prefWidth="200.0" text="Admin Login">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ToolBar layoutY="214.0" prefHeight="48.0" prefWidth="600.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#handleUserLoginButtonAction" prefWidth="100.0" text="Login">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+        </items>
+      </ToolBar>
+      <ToolBar layoutX="1.0" prefHeight="40.0" prefWidth="599.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+            <Label text="Login Screen">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+        </items>
+      </ToolBar>
+      <ImageView fitHeight="123.0" fitWidth="144.0" layoutX="3.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="123.0" fitWidth="144.0" layoutX="6.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

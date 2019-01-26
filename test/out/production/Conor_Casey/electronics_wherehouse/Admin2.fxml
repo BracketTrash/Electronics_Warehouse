@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="902.0" styleClass="pane" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="electronics_wherehouse.AdminController">
+   <children>
+      <ToolBar prefHeight="45.0" prefWidth="902.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#handleReturnButton" text="Back" />
+            <Label text=" Admin Screen" />
+        </items>
+      </ToolBar>
+      <TextArea fx:id="feedBackField" layoutX="14.0" layoutY="71.0" prefHeight="311.0" prefWidth="411.0" />
+      <ToolBar layoutX="14.0" layoutY="382.0" prefHeight="45.0" prefWidth="411.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#listProducts" text="Products" />
+        </items>
+      </ToolBar>
+      <TextField fx:id="idField" layoutX="14.0" layoutY="474.0" prefHeight="31.0" prefWidth="202.0" promptText="product ID" />
+      <TextField fx:id="nameField" layoutX="14.0" layoutY="505.0" prefHeight="31.0" prefWidth="202.0" promptText="product Name" />
+      <TextField fx:id="descriptionField" layoutX="14.0" layoutY="536.0" prefHeight="31.0" prefWidth="202.0" promptText="product Description" />
+      <TextField fx:id="costField" layoutX="14.0" layoutY="567.0" prefHeight="31.0" prefWidth="202.0" promptText="product Price" />
+      <TextField fx:id="categoryField" layoutX="14.0" layoutY="598.0" prefHeight="31.0" prefWidth="202.0" promptText="product Category" />
+      <Button layoutX="59.0" layoutY="629.0" mnemonicParsing="false" onAction="#createProduct" prefHeight="37.0" prefWidth="112.0" text="Create" />
+      <TextField fx:id="userIdField" layoutX="478.0" layoutY="474.0" prefHeight="31.0" prefWidth="202.0" promptText="User Id" />
+      <TextField fx:id="userNameField" layoutX="478.0" layoutY="505.0" prefHeight="31.0" prefWidth="202.0" promptText="User Name" />
+      <TextField fx:id="userPasswordField" layoutX="478.0" layoutY="536.0" prefHeight="31.0" prefWidth="202.0" promptText="User Password" />
+      <Button layoutX="523.0" layoutY="567.0" mnemonicParsing="false" onAction="#createUser" prefHeight="37.0" prefWidth="112.0" text="Create" />
+      <TextArea fx:id="feedBackFieldUsers" layoutX="478.0" layoutY="71.0" prefHeight="311.0" prefWidth="411.0" />
+      <ToolBar layoutX="478.0" layoutY="382.0" prefHeight="45.0" prefWidth="411.0">
+         <items>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#listUsers" text="Users" />
+         </items>
+      </ToolBar>
+      <TextField fx:id="removeProductField" layoutX="216.0" layoutY="474.0" prefHeight="31.0" prefWidth="202.0" promptText="product node" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="445.0" prefHeight="21.0" prefWidth="202.0" style="-fx-background-color: #42649e;" text="Add Product" textFill="WHITE" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="216.0" layoutY="445.0" prefHeight="21.0" prefWidth="202.0" style="-fx-background-color: #42649e;" text="Remove Product" textFill="WHITE" />
+      <Button layoutX="261.0" layoutY="505.0" mnemonicParsing="false" onAction="#removeProduct" prefHeight="37.0" prefWidth="112.0" text="Remove" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="478.0" layoutY="445.0" prefHeight="21.0" prefWidth="202.0" style="-fx-background-color: #42649e;" text="Add User" textFill="WHITE" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="680.0" layoutY="445.0" prefHeight="21.0" prefWidth="202.0" style="-fx-background-color: #42649e;" text="Remove user" textFill="WHITE" />
+      <TextField fx:id="removeUserField" layoutX="680.0" layoutY="474.0" prefHeight="31.0" prefWidth="202.0" promptText="user node" />
+      <Button layoutX="725.0" layoutY="505.0" mnemonicParsing="false" onAction="#removeUser" prefHeight="37.0" prefWidth="112.0" text="Remove" />
+   </children>
+</AnchorPane>
